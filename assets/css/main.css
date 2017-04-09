@@ -19,7 +19,10 @@ body {
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
-  font-kerning: normal; }
+  font-kerning: normal;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column; }
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -262,7 +265,8 @@ pre {
  * Page content
  */
 .page-content {
-  padding: 30px 0; }
+  padding: 30px 0;
+  flex: 1; }
 
 .page-heading {
   font-size: 22px; }
@@ -454,6 +458,9 @@ pre {
   .highlight .il {
     color: #099; }
 
+html {
+  height: 100%; }
+
 .banner {
   background-size: cover;
   background-position: center;
@@ -489,3 +496,5 @@ pre {
   width: calc(33%); }
   .gallery-item:hover {
     opacity: 0.6; }
+.gallery .page-wrapper {
+  flex: 1; }
